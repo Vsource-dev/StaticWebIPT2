@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>    
+    <style>
+
+        *{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a, a:visited,a::after,a:active{
+
+        text-decoration: none;
+        color: black;
+
+        }
+
+        html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        }
+
+
+        .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #333;
+
+        }
+
+        header {
+
+        display: flex;
+        padding: 1em 1.5em;
+        align-items: center;
+        justify-content: center;
+        width: 1000px;
+        gap: 30px;
+
+
+        }
+
+        .profile-picture{
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+        margin: auto;
+        border-radius: 10px;
+        }
+
+        .desc{
+
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: space-between;
+        align-items: start;
+        color: #FFF;
+
+        }
+
+        .profile-picture img{
+
+        width: 125px;
+        border-radius: 50%;
+
+        }
+
+        .icon{
+
+        display: flex;
+        gap: 10px;
+
+        }
+
+        .icon img{
+
+        width: 25px;
+
+        }
+
+        .name{
+
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        }
+
+        .content-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1em;
+        gap: 1em;
+
+        }
+
+        .content{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 30%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1em 1.5em;
+        text-align: justify;
+
+        }
+
+
+
+        .how-to-contact{
+
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+
+        }
+
+        .how-to-contact img{
+
+        width: 25px;
+        background-color: white;
+
+        }
+
+
+        .img-container{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+        }
+
+        .img-container img{
+
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+
+        }
+
+
+        @media (max-width: 1024px) {
+
+        header{
+
+            flex-direction: column;
+            text-align: center;
+            gap: 1px;
+
+        }
+
+        .profile-picture, .desc{
+
+            width: 100%;
+            justify-content:center;
+            gap: 10px;
+
+        }
+
+        .content{
+
+            width: 50%;
+
+        }
+
+        .desc{
+            align-items: center;
+        }
+
+        }
+
+        @media (max-width: 400px) {
+        .content{
+            width: 90%;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="header-container">
+        <header>
+            <div class="profile-picture">
+                <!-- PALITAN DP -->
+                <img src="/Gojo.webp" alt="profile-picture">
+            </div>
+            <div class="desc">
+                <div class="name">
+                    <!-- PALITAN NAME -->
+                    <h1>Stanley Astrho Mari Gonzales</h1>
+                    <p>Student</p>
+                </div>
+                <div class="icon">
+                    <!-- LINK NG FACEBOOK -->
+                    <a href="https://www.facebook.com/stanleyastrhomari.gonzales/" target="_blank"><img src="icons/fb.png" alt="facebook"></a>
+                    <!-- LINK NG INSTAGRAM -->
+                    <a href="https://www.instagram.com/sammmbutdiff/" target="_blank"><img src="/icons/insta.png" alt="instagram"></a>
+                    <!-- LINK NG GITHUB -->
+                    <a href="https://github.com/Vsource-dev" target="_blank"><img src="icons/github.png" alt="github"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="content-container">
+        <div class="content">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta laborum molestiae magnam, placeat voluptatibus veniam possimus quo, error illo architecto excepturi. Explicabo vero illo harum numquam eos sit eaque culpa!</p>
+        </div>
+        <div class="content">
+            <h2>Contact me</h2>
+            <div class="how-to-contact">
+                <img src="/icons/call.png" alt="call">
+                <!-- PHONE NUMBER -->
+                <p>09513236092</p>
+            </div>
+            <div class="how-to-contact">
+                <img src="icons/email.png" alt="email">
+                <!-- EMAIL -->
+                <p>stanley@gmail.com</p>
+            </div>
+            <div class="how-to-contact">
+                <img src="icons/facebook-app-symbol.png" alt="facebook">
+                <!-- FB NAME -->
+                <p><a href="https://www.facebook.com/stanleyastrhomari.gonzales/" target="_blank">Stanley Astrho Mari Gonzales</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
